@@ -1,10 +1,12 @@
-body {
-    background-color: rgb(0, 255, 234);
+html{
+    background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 97%, rgba(208,203,203,1) 100%);
+
+    height: 100%;
 }
 
 #root {
-    padding-top: 30%;
-    margin: auto;
+    /* padding-top: 30%; */
     text-align: center;
 }
 
@@ -12,3 +14,28 @@ h2 {
     width:inherit;
 }
 
+ul {
+    /* margin-top: 0%; */
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li a {
+    display: block;
+    color: rgb(155, 61, 61);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+li:hover {
+    border: solid gold;
+    /* transform: skew(10deg); */
+    transition: 0.3s;
+}
+
+li {
+    display: inline;
+    /* margin-right: 0.5%; */
+    opacity: 0.5;
+    float: right;
+}
