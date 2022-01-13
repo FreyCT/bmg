@@ -2,26 +2,29 @@ import React, {useState, useEffect} from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import {Home, About, Gallery, Contact} from "./components";
 import styles from './styles/styles';
+import slidesStyles from './styles/slideshow.css';
+
 
 export default function App(){
+
     return (
         <Router>
-           <div>
-                <ul>
-                    <li><Link to="/contact">Contact</Link></li>
-                    <li><Link to="/gallery">Gallery</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                    <li><Link to="/">Home</Link></li>
-                </ul>
+           <div className="navbar">
+                <Link to="/contact">Contact</Link>
+                <Link to="/gallery">Gallery</Link>
+                <Link to="/about">About</Link>
+                <div className="ball"></div>
+                <h3><Link to="/">Benjamin Michael Garner</Link></h3>
             </div>
 
-            <Routes>
-                <Route exact path='/' element={< Home />}></Route>
-                <Route exact path='/about' element={< About />}></Route>
-                <Route exact path='/gallery' element={< Gallery />}></Route>
-                <Route exact path='/contact' element={< Contact />}></Route>
-            </Routes>
-
+            <div className='main'>
+                <Routes>
+                    <Route exact path='/' element={< Home />}></Route>
+                    <Route exact path='/about' element={< About />}></Route>
+                    <Route exact path='/gallery' element={< Gallery />}></Route>
+                    <Route exact path='/contact' element={< Contact />}></Route>
+                </Routes>
+            </div>
        </Router>
     )
 }

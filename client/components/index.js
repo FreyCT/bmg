@@ -4,10 +4,12 @@ import Home from './home';
 import About from './about';
 import Gallery from './gallery';
 import Contact from './contact';
+import Slideshow from './slideshow';
 
 export {
 Home,
 About,
 Gallery,
-Contact
+Contact,
+Slideshow
 }
