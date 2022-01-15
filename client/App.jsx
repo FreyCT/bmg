@@ -1,30 +1,34 @@
 import React, {useState, useEffect} from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import {Home, About, Gallery, Contact} from "./components";
-import styles from './styles/styles';
-import slidesStyles from './styles/slideshow.css';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircle } from '@fortawesome/free-solid-svg-icons'
+import {styles} from './styles';
 
 export default function App(){
 
     return (
         <Router>
-           <div className="navbar">
-                <Link to="/contact">Contact</Link>
-                <Link to="/gallery">Gallery</Link>
-                <Link to="/about">About</Link>
-                <div className="ball"></div>
-                <h3><Link to="/">Benjamin Michael Garner</Link></h3>
-            </div>
-
-            <div className='main'>
+           <nav className="navbar">
+                <span>
+                    <FontAwesomeIcon icon={faCircle}/>
+                    <Link className="logo" to="/"><b>Benjamin Michael Garner</b> <div className="artist">Visual Artist</div></Link>
+                </span>
+                <div>
+                    <Link className="link" to="/contact">Contact</Link>
+                    <Link className="link" to="/gallery">Gallery</Link>
+                    <Link className="link" to="/about">About</Link>
+                </div>
+            </nav>
+            <br/>
+            <main className='main'>
                 <Routes>
                     <Route exact path='/' element={< Home />}></Route>
                     <Route exact path='/about' element={< About />}></Route>
                     <Route exact path='/gallery' element={< Gallery />}></Route>
                     <Route exact path='/contact' element={< Contact />}></Route>
                 </Routes>
-            </div>
+            </main>
        </Router>
     )
 }

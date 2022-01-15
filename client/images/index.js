@@ -16,7 +16,7 @@ import image13 from './IMG_0413.jpeg';
 import image14 from './IMG_0776.jpg';
 import image15 from './IMG_2188.jpg';
 import image16 from './intersectingpop_2015.jpg';
-// import image17 from './lunarcircus_2014.jpeg';
+import image17 from './lunarcircus_2014.jpg';
 import image18 from './mandalaA_2014.jpg';
 import image19 from './mandalaB_2014.jpg';
 import image20 from './patrik_2014.jpg';
@@ -44,7 +44,7 @@ const images = [
     image14,
     image15,
     image16,
-    // image17,
+    image17,
     image18,
     image19,
     image20,
@@ -75,7 +75,7 @@ image13,
 image14,
 image15,
 image16,
-// image17,
+image17,
 image18,
 image19,
 image20,
