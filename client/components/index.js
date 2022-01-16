@@ -4,12 +4,10 @@ import Home from './home';
 import Artiststatement from './artistStatement';
 import Gallery from './gallery';
 import Contact from './contact';
-import Slideshow from './slideshow';
 
 export {
 Home,
 Artiststatement,
 Gallery,
 Contact,
-Slideshow
 }

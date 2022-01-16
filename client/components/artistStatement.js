@@ -1,15 +1,16 @@
 import React from 'react';
-import {image01, image06, image08} from '../images';
+import {image01, image04, image06, image08, image11} from '../images';
 
 function About () {
 	return <>
         <div className='col-1'></div>
         <div className='col-12'>
             <div className='col-3'>
-                <img src={image06} className='col-12'/>
-                <img src={image01} className='col-12'/>
+                <img src={image06} className='hideOnMobile col-12'/>
+                <img src={image04} className='col-12'/>
+                <img src={image11} className='col-12'/>
             </div>
-            <article className='col-6'>
+            <article className='artiststatement col-6'>
                 <h2>Artist statement</h2>
                 <p> Aesthetically, my work takes on many different forms of which I attribute to the improvisational processes 
                     I take when referencing the imagination as a source of the Unknown. My silkscreen prints on canvas are large 
@@ -39,7 +40,10 @@ function About () {
                     of expression that at best, resembles an intended feeling of awe and wonder.
                 </p>
             </article>
-            <img src={image08} className='imageLeft col-3'/>
+            <div className='col-3'>
+                <img src={image01} className='hideOnMobile col-12'/>
+                <img src={image08} className='hideOnMobile col-12'/>
+            </div>
         </div>
         <div className='col-1'></div>
 	</>

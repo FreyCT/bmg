@@ -10,14 +10,16 @@ export default function App(){
     return (
         <Router>
            <nav className="navbar">
-                <span>
-                    <FontAwesomeIcon icon={faCircle}/>
-                    <Link className="logo" to="/"><b>Benjamin Michael Garner</b> <div className="artist">Visual Artist</div></Link>
-                </span>
                 <div className="menu">
-                    <Link className="link" to="/contact">Contact</Link><FontAwesomeIcon className="verticalLine" icon={faGripLinesVertical}/>
-                    <Link className="link" to="/gallery">Gallery</Link><FontAwesomeIcon className="verticalLine" icon={faGripLinesVertical}/>
-                    <Link className="link" to="/artiststatement">Artist Statement</Link>
+                    <span>
+                        <FontAwesomeIcon icon={faCircle}/>
+                        <Link className="logo" to="/"><b>Benjamin Michael Garner</b> <div className="artist">Visual Artist</div></Link>
+                    </span>
+                    <div>
+                        <Link className="link" to="/contact">Contact</Link><FontAwesomeIcon className="verticalLine" icon={faGripLinesVertical}/>
+                        <Link className="link" to="/gallery">Gallery</Link><FontAwesomeIcon className="verticalLine" icon={faGripLinesVertical}/>
+                        <Link className="link" to="/artiststatement">Artist Statement</Link>
+                    </div>
                 </div>
                 <div className="hamburger"><FontAwesomeIcon icon={faBars} /></div>
             </nav>

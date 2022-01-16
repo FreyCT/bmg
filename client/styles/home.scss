@@ -1,8 +1,9 @@
+@import "variables";
+
 
 .ben {
     border-radius: 80%;
-    border: outset red;
-    // width: 90%;
+    border: outset $themeColor;
     height: max-content;
     display: inline-block;
     vertical-align: top;
