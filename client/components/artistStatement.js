@@ -1,11 +1,14 @@
 import React from 'react';
-import {image06} from '../images';
+import {image01, image06, image08} from '../images';
 
 function About () {
 	return <>
         <div className='col-1'></div>
-        <div className='col-10'>
-            <img src={image06} className='imageLeft col-6'/>
+        <div className='col-12'>
+            <div className='col-3'>
+                <img src={image06} className='col-12'/>
+                <img src={image01} className='col-12'/>
+            </div>
             <article className='col-6'>
                 <h2>Artist statement</h2>
                 <p> Aesthetically, my work takes on many different forms of which I attribute to the improvisational processes 
@@ -36,6 +39,7 @@ function About () {
                     of expression that at best, resembles an intended feeling of awe and wonder.
                 </p>
             </article>
+            <img src={image08} className='imageLeft col-3'/>
         </div>
         <div className='col-1'></div>
 	</>

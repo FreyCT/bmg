@@ -87,14 +87,21 @@ path {
 
 
 .main {
-    padding-top: 5em;
+    padding-top: 3em;
 }
 
 article {
+  margin-top: 7%;
   text-align: left;
   h1 {
     font-size: 3em;
+    margin: 0;
   }
+
+  h2{
+    margin: 0;
+  }
+
   p {
     text-indent: 3em;
   }
