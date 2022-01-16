@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import {Home, About, Gallery, Contact} from "./components";
+import {Home, Artiststatement, Gallery, Contact} from "./components";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCircle } from '@fortawesome/free-solid-svg-icons'
-import {styles} from './styles';
+import { faCircle, faGripLinesVertical } from '@fortawesome/free-solid-svg-icons'
+import {styles, home, artiststatement} from './styles';
 
 export default function App(){
 
@@ -15,16 +15,16 @@ export default function App(){
                     <Link className="logo" to="/"><b>Benjamin Michael Garner</b> <div className="artist">Visual Artist</div></Link>
                 </span>
                 <div>
-                    <Link className="link" to="/contact">Contact</Link>
-                    <Link className="link" to="/gallery">Gallery</Link>
-                    <Link className="link" to="/about">About</Link>
+                    <Link className="link" to="/contact">Contact</Link><FontAwesomeIcon className="verticalLine" icon={faGripLinesVertical}/>
+                    <Link className="link" to="/gallery">Gallery</Link><FontAwesomeIcon className="verticalLine" icon={faGripLinesVertical}/>
+                    <Link className="link" to="/artiststatement">Artist Statement</Link>
                 </div>
             </nav>
             <br/>
             <main className='main'>
                 <Routes>
                     <Route exact path='/' element={< Home />}></Route>
-                    <Route exact path='/about' element={< About />}></Route>
+                    <Route exact path='/artiststatement' element={< Artiststatement />}></Route>
                     <Route exact path='/gallery' element={< Gallery />}></Route>
                     <Route exact path='/contact' element={< Contact />}></Route>
                 </Routes>

@@ -6,7 +6,7 @@ $themeColor: rgb(238, 35, 20);
 //background
 html{
     background: $primaryColor;
-    background: linear-gradient(0deg, rgba(255,255,255,1) 97%, rgba(208,203,203,1) 100%);
+    // background: linear-gradient(0deg, rgba(255,255,255,1) 97%, rgba(208,203,203,1) 100%);
     background-repeat: no-repeat;
     height: 100%;
     margin: 0;
@@ -18,9 +18,11 @@ html{
 }
 
 .navbar {
+  background: $primaryColor;
+  background: linear-gradient(0deg, rgba(255,255,255,1) 30%, rgba(208,203,203,1) 100%);
   overflow: hidden;
   position: fixed;
-  opacity: 0.75;
+  // opacity: 0.75;
   top: 0;
   width: 100%;
   padding-right: 1%;
@@ -32,6 +34,15 @@ html{
     color: $themeColor;
     text-align: center;
     padding: 8px 10px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .verticalLine {
+    float: right;
+    // display: block;
+    text-align: center;
+    margin: 8px 5px;
     text-decoration: none;
     font-size: 18px;
   }

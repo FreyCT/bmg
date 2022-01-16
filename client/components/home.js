@@ -4,10 +4,10 @@ import { headshot } from '../images';
 function Home (){
     return (
         <div className='row'>
-            <div className='col-3'></div>
-            <div className='col-6 row'>
-                <img src={headshot} className='ben col-5'/>
-                <article className='col-7'>
+            <div className='col-1'></div>
+            <div className='col-10 row'>
+                <img src={headshot} className='ben col-6'/>
+                <article className='col-6'>
                     <h1>Hello</h1>
                     <h2>A bit about Me</h2>
                     <p> Benjamin Garner is a Vancouver-based visual artist and graduate of Emily Carr University of Art and Design.
@@ -18,7 +18,7 @@ function Home (){
                     </p>
                 </article>
             </div>
-            <div className='col-3'></div>
+            <div className='col-1'></div>
         </div>
     )
 }
