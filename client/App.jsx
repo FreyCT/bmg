@@ -7,6 +7,8 @@ import {styles, home, artiststatement} from './styles';
 
 export default function App(){
 
+    const [open, setOpen] = useState(false);
+
     return (
         <Router>
            <nav className="navbar">

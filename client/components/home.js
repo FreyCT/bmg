@@ -3,7 +3,7 @@ import { headshot } from '../images';
  
 function Home (){
     return (
-        <div className='row'>
+        <div className='center row'>
             <div className='col-2'></div>
             <div className='col-8 row'>
                 <img src={headshot} className='ben col-5'/>

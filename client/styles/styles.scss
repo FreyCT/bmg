@@ -81,6 +81,13 @@ path {
     color: $themeColor;
 }
 
+img {
+  padding: 10px;
+  border-style: groove;
+  border-width: 1px;
+  // border-color: red;
+}
+
 .menu {
   display: none;
 }
@@ -137,7 +144,7 @@ article {
 
   [class*="col-"] {
     float: left;
-    padding: 15px;
+    padding: 10px;
   }
   
   .footer {
