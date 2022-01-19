@@ -3,6 +3,7 @@ import {image01, image04, image06, image11, image22} from '../images';
 
 function About () {
 	return <>
+        <h1>Artist statement</h1>
         <div className='col-1'></div>
         <div className='col-10'>
             <div className='col-4'>
@@ -11,7 +12,7 @@ function About () {
                 {/* <img src={image06} className='hideOnMobile col-12'/> */}
             </div>
             <article className='artiststatement col-4'>
-                <h2>Artist statement</h2>
+                
                 <p> Aesthetically, my work takes on many different forms of which I attribute to the improvisational processes 
                     I take when referencing the imagination as a source of the Unknown. My silkscreen prints on canvas are large 
                     in appearance and reflect the human body. They challenge traditional methods of printing by building basic geometric

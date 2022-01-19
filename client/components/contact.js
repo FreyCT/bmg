@@ -2,10 +2,9 @@ import React from 'react';
 
 function Contact (){
 return <address>
-			You can find us here:<br />
-			GeeksforGeeks<br />
-			5th & 6th Floor, Royal Kapsons, A- 118, <br />
-			Sector- 136, Noida, Uttar Pradesh (201305)
+			Email: iambmg@me.com <br/>
+			Address: 3835 west 27th Ave., Vancouver, BC V6S 1R4 <br/>
+			Phone: 778-385-2364 
 		</address>
 }
 
