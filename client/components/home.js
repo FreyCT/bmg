@@ -1,6 +1,6 @@
 import React from 'react';
 import { headshot } from '../images';
- 
+
 function Home (){
     return (
         <div className='center row'>

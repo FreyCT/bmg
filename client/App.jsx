@@ -7,10 +7,34 @@ import {styles, home, artiststatement} from './styles';
 
 export default function App(){
 
+    const HamBurger = () => {
+        return (
+            <div className="hamburger" onClick={() => clickHandler()}><FontAwesomeIcon icon={faBars} /></div>
+        )
+    }
+
+    const Menu = () => {
+        return (
+            <div className="mobileMenu" onClick={() => clickHandler()}>
+                <b><Link to="/">Biography</Link>
+                <Link to="/artiststatement">Artist Statement</Link>
+                <Link to="/gallery">Gallery</Link>
+                <Link to="/contact">Contact</Link></b>
+            </div>
+        )
+    }
+
     const [open, setOpen] = useState(false);
+
+    const clickHandler = () => {
+        setOpen(!open);
+    }
+
+    const displayMenu = !open ? <HamBurger/> : <Menu/>
 
     return (
         <Router>
+            {displayMenu}
            <nav className="navbar">
                 <div className="menu">
                     <span>
@@ -23,7 +47,7 @@ export default function App(){
                         <Link className="link" to="/artiststatement">Artist Statement</Link>
                     </div>
                 </div>
-                <div className="hamburger"><FontAwesomeIcon icon={faBars} /></div>
+                
             </nav>
 
 

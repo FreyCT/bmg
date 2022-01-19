@@ -109,7 +109,6 @@ const Burger = ({ open, setOpen }) => {
   )
 }
 
-
 const App = () => {
   const [open, setOpen] = React.useState(false);
   const node = React.useRef();

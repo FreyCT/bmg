@@ -1,14 +1,14 @@
 import React from 'react';
-import {image01, image04, image06, image08, image11} from '../images';
+import {image01, image04, image06, image11, image22} from '../images';
 
 function About () {
 	return <>
         <div className='col-1'></div>
         <div className='col-10'>
             <div className='col-4'>
-                <img src={image06} className='hideOnMobile col-12'/>
-                <img src={image04} className='col-12'/>
-                <img src={image11} className='hideOnMobile col-12'/>
+                <img src={image04} className='hideOnMobile col-12'/>
+                <img src={image22} className=' col-12'/>
+                {/* <img src={image06} className='hideOnMobile col-12'/> */}
             </div>
             <article className='artiststatement col-4'>
                 <h2>Artist statement</h2>
@@ -42,7 +42,7 @@ function About () {
             </article>
             <div className='col-4'>
                 <img src={image01} className='hideOnMobile col-12'/>
-                <img src={image08} className='hideOnMobile col-12'/>
+                <img src={image11} className='hideOnMobile col-12'/>                
             </div>
         </div>
         <div className='col-1'></div>

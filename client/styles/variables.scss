@@ -2,3 +2,11 @@
 $primaryColor: white;
 $secondaryColor: black;
 $themeColor: rgb(238, 35, 20);
+
+@mixin navStyles {
+    float: right;
+    text-align: center;
+    margin: 8px 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
