@@ -1,3 +1,5 @@
+@import "variables";
+
 .wrapper {
     margin-left: auto;
     margin-right: auto;
@@ -46,14 +48,14 @@
   
   /* Bordered masonry */
   .masonry.bordered {
-    column-rule: 1px solid rgb(0, 0, 0);
+    column-rule: 1px solid $bordercolor;
     column-gap: 50px;
   }
   
   .masonry.bordered .brick {
     padding-bottom: 25px;
     margin-bottom: 25px;
-    border-bottom: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid $bordercolor;
   }
   
   /* Masonry on tablets */

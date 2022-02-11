@@ -2,6 +2,8 @@
 $primaryColor: white;
 $secondaryColor: black;
 $themeColor: rgb(238, 35, 20);
+$bordercolor: rgba(255, 177, 167, 0.3);
+// rgba(255, 177, 167, 0.3);
 
 @mixin navStyles {
     float: right;
