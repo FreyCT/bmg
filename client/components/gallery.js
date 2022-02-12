@@ -3,9 +3,9 @@ import { images } from '../images';
 
 function Gallery () {
 
-	const gallery = images.map(image => (
+	const gallery = images.map(data => (
 	<div className='brick'>
-		<img src={image} />
+		<img src={data.image} />
 	</div>));
 
 	return <div className='wrapper'>
