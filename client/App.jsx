@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import {Home, Artiststatement, Gallery, Contact} from "./components";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircle, faGripLinesVertical, faBars } from '@fortawesome/free-solid-svg-icons'
-import {styles, home, artiststatement, gallery} from './styles';
+import {styles, home, artiststatement, gallery, imageCard} from './styles';
 
 export default function App(){
 
@@ -47,10 +47,7 @@ export default function App(){
                         <Link className="link" to="/artiststatement">Artist Statement</Link>
                     </div>
                 </div>
-                
             </nav>
-
-
             <br/>
             <main className='main'>
                 <Routes>

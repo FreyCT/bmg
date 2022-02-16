@@ -57,6 +57,31 @@
     margin-bottom: 25px;
     border-bottom: 1px solid $bordercolor;
   }
+
+  #closeImage {
+    width: 95%;
+    justify-content: flex-end;
+    svg {
+      width: 15px;
+      height: auto;
+    }
+  }
+
+  #imageCard {
+    margin-top: 20px;
+    width: 100%;
+    background-color: rgb(203, 255, 225);
+    justify-content: space-between;
+
+    img {
+      width: auto;
+      height: auto;
+      max-height: 650px;
+      max-width: 50%;
+    }
+
+    
+  }
   
   /* Masonry on tablets */
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
