@@ -34,7 +34,7 @@ const ImageCard = memo(({ title, explanation, url, date }) => {
 	return (
 		<motion.div style={{margin: 'auto'}}>
 			<div style={{ display: width > 900 && 'flex' , alignItems: 'center'}}>
-				<CardImg style={seeMore ? { width: `auto`, maxWidth: `${width/3}px`, height: 'auto' } : { objectFit: 'fill', width: '20%', height: 'auto' }} src={url} alt={url} />
+				<CardImg style={seeMore ? { width: `auto`, maxWidth: `${width > 768 ? width/3 : width}px`, height: 'auto' } : { objectFit: 'fill', width: '20%', height: 'auto' }} src={url} alt={url} />
 				{seeMore && ( 
 					<CardBody style={{margin: 'auto'}}>
 						<CardTitle tag="h5" style={{ overflow: 'auto', textOverflow: 'ellipsis', whiteSpace: seeMore ? '' : 'nowrap' }}>
