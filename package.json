@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "start": "node server/server.js",
     "build": "webpack",
     "dev": "concurrently \"cross-env NODE_ENV=development webpack serve --open --hot --progress\" \"nodemon ./server/server.js\""
