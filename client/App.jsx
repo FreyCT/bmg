@@ -39,7 +39,7 @@ export default function App(){
                 <div className="menu">
                     <span>
                         <FontAwesomeIcon icon={faCircle}/>
-                        <Link className="logo" to="/"><b>Benjamin Michael Garner</b> <div className="artist">Visual Artist</div></Link>
+                        <Link className="logo" to="/bmg"><b>Benjamin Michael Garner</b> <div className="artist">Visual Artist</div></Link>
                     </span>
                     <div>
                         <Link className="link" to="/contact">Contact</Link><FontAwesomeIcon className="verticalLine" icon={faGripLinesVertical}/>
