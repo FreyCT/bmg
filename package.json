@@ -1,17 +1,19 @@
 {
-  "name": "@freyct/create-react-crib",
+  "name": "@freyct/bmg",
   "version": "1.1.5",
-  "description": "template for react projects",
+  "description": "BMG Gallery",
   "bin": "./bin/cli.js",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "node server/server.js",
     "build": "webpack",
     "dev": "concurrently \"cross-env NODE_ENV=development webpack serve --open --hot --progress\" \"nodemon ./server/server.js\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FreyCT/create-react-crib.git"
+    "url": "git+https://github.com/FreyCT/bmg.git"
   },
   "keywords": [
     "template",
@@ -23,9 +25,9 @@
   "author": "FreyCT",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/FreyCT/create-react-crib/issues"
+    "url": "https://github.com/FreyCT/bmg/issues"
   },
-  "homepage": "https://github.com/FreyCT/create-react-crib#readme",
+  "homepage": "https:///freyct.github.io/bmg",
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.16.4",
     "@babel/runtime": "^7.16.3",
@@ -54,6 +56,7 @@
     "cross-env": "^7.0.3",
     "css-loader": "^6.5.1",
     "dotenv": "^10.0.0",
+    "gh-pages": "^3.2.3",
     "html-loader": "^3.0.1",
     "html-webpack-plugin": "^5.5.0",
     "node-sass": "^7.0.0",
