@@ -51,7 +51,7 @@ export default function App(){
             <br/>
             <main className='main'>
                 <Routes>
-                    <Route exact path='/' element={< Home />}></Route>
+                    <Route exact path='/bmg' element={< Home />}></Route>
                     <Route exact path='/artiststatement' element={< Artiststatement />}></Route>
                     <Route exact path='/gallery' element={< Gallery />}></Route>
                     <Route exact path='/contact' element={< Contact />}></Route>
