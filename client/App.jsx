@@ -16,7 +16,7 @@ export default function App(){
     const Menu = () => {
         return (
             <div className="mobileMenu" onClick={() => clickHandler()}>
-                <b><Link to="/">Biography</Link>
+                <b><Link to="/bmg">Biography</Link>
                 <Link to="/artiststatement">Artist Statement</Link>
                 <Link to="/gallery">Gallery</Link>
                 <Link to="/contact">Contact</Link></b>
