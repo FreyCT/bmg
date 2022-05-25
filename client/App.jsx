@@ -16,7 +16,7 @@ export default function App(){
     const Menu = () => {
         return (
             <div className="mobileMenu" onClick={() => clickHandler()}>
-                <b><Link to="/bmg">Biography</Link>
+                <b><Link to="/">Biography</Link>
                 <Link to="/artiststatement">Artist Statement</Link>
                 <Link to="/gallery">Gallery</Link>
                 <Link to="/contact">Contact</Link></b>
@@ -39,7 +39,7 @@ export default function App(){
                 <div className="menu">
                     <span>
                         <FontAwesomeIcon icon={faCircle}/>
-                        <Link className="logo" to="/bmg"><b>Benjamin Michael Garner</b> <div className="artist">Visual Artist</div></Link>
+                        <Link className="logo" to="/"><b>Benjamin Michael Garner</b> <div className="artist">Visual Artist</div></Link>
                     </span>
                     <div>
                         <Link className="link" to="/contact">Contact</Link><FontAwesomeIcon className="verticalLine" icon={faGripLinesVertical}/>
@@ -51,7 +51,7 @@ export default function App(){
             <br/>
             <main className='main'>
                 <Routes>
-                    <Route exact path='/bmg' element={< Home />}></Route>
+                    <Route exact path='/' element={< Home />}></Route>
                     <Route exact path='/artiststatement' element={< Artiststatement />}></Route>
                     <Route exact path='/gallery' element={< Gallery />}></Route>
                     <Route exact path='/contact' element={< Contact />}></Route>
